@@ -55,7 +55,7 @@ sed -i 's/,scandir//g' /usr/local/php/etc/php.ini
 # 重启 PHP生效
 ```
 
-#### 简介说明功能
+#### 简介功能说明
 
 我也不知道该给这个功能起什么名字，好捉急偶。
 
@@ -69,7 +69,23 @@ $md_path = explode("pw", $md_path_all);
 
 为了避免中文乱码，把` README.html `文件用 UTF-8无BOM编码 保存！
 
-——————
+#### 文件修改说明
+
+修改网站中头部导航标题，去这个文件里搜索` DOUBI Soft `然后全部替换为自己要改的。
+
+` \resources\DirectoryLister.php `
+
+修改网站标签栏的标题，去这个文件里把开头` <title> `标签中的` DOUBI Soft `替换为自己要改的。
+
+` \resources\themes\bootstrap\index.php `
+
+网站头部公共文件：
+
+` \resources\themes\bootstrap\default_header.php `
+
+网站底部公共文件：
+
+` \resources\themes\bootstrap\default_footer.php `
 
 如果想要插入流量统计代码，那只需要把代码写到 default_header.php 文件内即可。
 
