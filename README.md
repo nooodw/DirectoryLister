@@ -61,9 +61,9 @@ sed -i 's/,scandir//g' /usr/local/php/etc/php.ini
 
 使用这个功能，需要打开` resources\themes\bootstrap\index.php `文件，找到第五行的：
 ``` bash
-$md_path = explode("pw", $md_path_all);
+$md_path = explode("com", $md_path_all);
 ```
-把` pw `改成你的域名后缀(比如` xxx.com `就是改成` com `)，当初只是自用，现在一公开开源，我给忘了。
+把` com `改成你的域名后缀(比如` xxx.cn `就是改成` cn `)，当初只是自用，现在一公开开源，我给忘了。
 
 反正就是每个文件夹下面放一个` README.html `文件，这个文件里写着 简介说明内容即可。
 
@@ -91,6 +91,6 @@ $md_path = explode("pw", $md_path_all);
 
 ——————
 
-我的博客 逗比根据地(需挂代理)：https://doub.io/
+我的博客 逗比根据地(需挂代理)：https://doub.io/dbrj-3/
 
 本程序基于 Directory Lister原版魔改：http://www.directorylister.com/
