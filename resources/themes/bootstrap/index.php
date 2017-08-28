@@ -2,7 +2,7 @@
 <?php 
 header("Content-type: text/html; charset=utf-8"); 
 $md_path_all = $lister->getListedPath();
-$md_path = explode("pw", $md_path_all);
+$md_path = explode("com", $md_path_all);
 if($md_path[1] != ""){
 	$md_path_last = substr($md_path[1], -1);
 	if($md_path_last != "/"){
@@ -16,20 +16,16 @@ $md_text = file_get_contents($md_file);
 <html>
     <head>
         <title>DOUBI Soft <?php echo $md_path_all; ?></title>
-        <link rel="shortcut icon" href="<?php echo THEMEPATH; ?>/img/folder.png">
-        <!-- STYLES -->
+        <link rel="shortcut icon" href="/resources/themes/bootstrap/img/folder.png">
         <link rel="stylesheet" href="/resources/themes/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="/resources/themes/bootstrap/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="<?php echo THEMEPATH; ?>/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/resources/themes/bootstrap/css/style.css">
 		<link href="/resources/themes/bootstrap/css/prism.css" rel="stylesheet" />
-        <!-- SCRIPTS -->
-        <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
-        <script src="/resources/themes/bootstrap/js/prism.js"></script>
+        <script src="/resources/themes/bootstrap/js/jquery.min.js"></script>
+		<script src="/resources/themes/bootstrap/js/prism.js"></script>
 		<script src="/resources/themes/bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="<?php echo THEMEPATH; ?>/js/directorylister.js"></script>
-        <!-- FONTS -->
-        <!-- <link rel="stylesheet" type="text/css"  href="//fonts.googleapis.com/css?family=Cutive+Mono"> -->
-        <!-- META -->
+        <!-- script type="text/javascript" src="/resources/themes/bootstrap/js/directorylister.js"></script -->
+        <!-- link rel="stylesheet" type="text/css"  href="//fonts.googleapis.com/css?family=Cutive+Mono" -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <?php file_exists('analytics.inc') ? include('analytics.inc') : false; ?>
